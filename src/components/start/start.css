@@ -1,0 +1,24 @@
+.start {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  
+  background: #414141;
+}
+.grid-layout-title-container {
+  width: 600px;
+  height: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid grey;
+  display: flex;
+  align-items: flex-end;
+}
+.grid-layout-container {
+  
+}
+.grid-container {
+  width: 400px;
+  height: 400px;
+  border: 1px solid grey;
+}

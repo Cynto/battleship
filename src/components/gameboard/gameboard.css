@@ -1,0 +1,10 @@
+.gameboard-container {
+  width: 400px;
+  height: 500px;
+  border: 1px solid grey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

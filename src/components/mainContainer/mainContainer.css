@@ -1,0 +1,6 @@
+.main-container {
+  flex: 1;
+  background: #414141;
+  display: flex;
+  justify-content: center;
+}

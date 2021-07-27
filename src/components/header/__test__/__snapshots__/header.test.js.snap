@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start page tests Matches snapshot 1`] = `
+<header
+  className="header"
+  data-testid="header"
+>
+  <a
+    href="#/"
+    onClick={[Function]}
+  >
+    <h1>
+      Battleship
+    </h1>
+  </a>
+</header>
+`;

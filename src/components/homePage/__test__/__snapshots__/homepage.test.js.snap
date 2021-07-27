@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Start page tests Matches snapshot 1`] = `
+<div
+  className="start-page"
+  data-testid="start-page"
+>
+  <div
+    className="menu-container"
+  >
+    <p>
+      Your mission is to destroy all enemy ships!
+    </p>
+    <a
+      href="#/start"
+      onClick={[Function]}
+    >
+      <button>
+        Start Game
+      </button>
+    </a>
+  </div>
+</div>
+`;
