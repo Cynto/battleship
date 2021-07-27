@@ -6,13 +6,14 @@ import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import store from '../../../store';
 
 describe('Main Container tests', () => {
   afterEach(cleanup);
   test('Renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(
-      <Provider>
+      <Provider store={store}>
         <Router>
           <Start />{' '}
         </Router>
@@ -22,7 +23,7 @@ describe('Main Container tests', () => {
   });
   test('Renders main container correctly', () => {
     const { getByTestId } = render(
-      <Provider>
+      <Provider store={store}>
         <Router>
           <Start />{' '}
         </Router>
@@ -33,9 +34,11 @@ describe('Main Container tests', () => {
   test('Matches snapshot', () => {
     const tree = renderer
       .create(
-        <Router>
-          <Start />
-        </Router>,
+        <Provider store={store}>
+          <Router>
+            <Start />{' '}
+          </Router>
+        </Provider>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

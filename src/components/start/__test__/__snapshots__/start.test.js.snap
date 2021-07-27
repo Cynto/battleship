@@ -1,16 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Container tests Matches snapshot 1`] = `
-<div
-  className="start"
-  data-testid="start"
->
+Array [
   <div
-    className="grid-layout-container"
+    className="start"
+    data-testid="start"
   >
     <div
-      className="grid-container"
-    />
-  </div>
-</div>
+      className="grid-layout-title-container"
+    >
+      <div
+        className="grid-layout-container"
+      >
+        <div
+          className="grid-container"
+        />
+      </div>
+    </div>
+  </div>,
+  " ",
+]
 `;

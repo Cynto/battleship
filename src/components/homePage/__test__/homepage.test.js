@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StartPage from '../HomePage';
+import HomePage from '../HomePage';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
@@ -12,7 +12,7 @@ describe('Start page tests', () => {
     const div = document.createElement('div');
     ReactDOM.render(
       <Router>
-        <StartPage />
+        <HomePage />
       </Router>,
       div,
     );
@@ -20,7 +20,7 @@ describe('Start page tests', () => {
   test('Renders main container correctly', () => {
     const { getByTestId } = render(
       <Router>
-        <StartPage />
+        <HomePage />
       </Router>,
     );
     expect(getByTestId('start-page')).toHaveClass('start-page');
@@ -29,7 +29,7 @@ describe('Start page tests', () => {
     const tree = renderer
       .create(
         <Router>
-          <StartPage />
+          <HomePage />
         </Router>,
       )
       .toJSON();
