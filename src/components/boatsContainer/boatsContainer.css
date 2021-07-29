@@ -1,0 +1,30 @@
+.boats-container {
+  
+  height: 100%;
+  width: 298px;
+  height: 400px;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.boat-amount-container {
+  
+  height: 40px;
+  
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 210px;
+}
+.boat-amount-container span {
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.draggable-item {
+  display: flex;
+  
+}

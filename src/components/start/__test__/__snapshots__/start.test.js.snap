@@ -9,12 +9,614 @@ Array [
     <div
       className="grid-layout-title-container"
     >
+      <h2>
+        Arrange Your Board
+      </h2>
       <div
         className="grid-layout-container"
       >
         <div
           className="grid-container"
-        />
+        >
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+          <div
+            className="not-visible grid-item"
+            onClick={[Function]}
+            onDragEnter={[Function]}
+          />
+        </div>
+        <div
+          className="boats-container"
+        >
+          <div
+            className=" boat-amount-container"
+          >
+            <span>
+              1
+              x
+            </span>
+            <div
+              className="draggable-item"
+              draggable="true"
+              onClick={[Function]}
+              onDragEnd={[Function]}
+              onDragStart={[Function]}
+            >
+              <div
+                className="visible-player grid-item"
+              />
+              <div
+                className="visible-player grid-item"
+              />
+              <div
+                className="visible-player grid-item"
+              />
+              <div
+                className="visible-player grid-item"
+              />
+            </div>
+          </div>
+          <div
+            className=" boat-amount-container"
+          >
+            <span>
+              2
+              x
+            </span>
+            <div
+              className="draggable-item"
+              draggable="true"
+              onClick={[Function]}
+              onDragEnd={[Function]}
+              onDragStart={[Function]}
+            >
+              <div
+                className="visible-player grid-item"
+              />
+              <div
+                className="visible-player grid-item"
+              />
+              <div
+                className="visible-player grid-item"
+              />
+            </div>
+          </div>
+          <div
+            className=" boat-amount-container"
+          >
+            <span>
+              3
+              x
+            </span>
+            <div
+              className="draggable-item"
+              draggable="true"
+              onClick={[Function]}
+              onDragEnd={[Function]}
+              onDragStart={[Function]}
+            >
+              <div
+                className="visible-player grid-item"
+              />
+              <div
+                className="visible-player grid-item"
+              />
+            </div>
+          </div>
+          <div
+            className=" boat-amount-container"
+          >
+            <span>
+              4
+              x
+            </span>
+            <div
+              className="draggable-item"
+              draggable="true"
+              onClick={[Function]}
+              onDragEnd={[Function]}
+              onDragStart={[Function]}
+            >
+              <div
+                className="visible-player grid-item"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
