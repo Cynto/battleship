@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import './boatsContainer.css';
 
 function BoatsContainer(props: any) {
-  const {
-    setSize,
-    placeBoat,
-    setDragging,
-    gridIndex,
-    hoverLeave,
-    validPlacement,
-  } = props;
+  const { setSize, changeGridItem, setDragging, gridIndex, hoverLeave } = props;
   const [size4BoatAmount, setSize4BoatAmount] = useState(1);
   const [size3BoatAmount, setSize3BoatAmount] = useState(2);
   const [size2BoatAmount, setSize2BoatAmount] = useState(3);
@@ -29,7 +22,7 @@ function BoatsContainer(props: any) {
           }}
           onDragEnd={() => {
             if (size4BoatAmount > 0) {
-              if (placeBoat(gridIndex, 1)) {
+              if (changeGridItem(gridIndex, 1)) {
                 setSize4BoatAmount(size4BoatAmount - 1);
               }
             }
@@ -58,7 +51,7 @@ function BoatsContainer(props: any) {
           }}
           onDragEnd={() => {
             if (size3BoatAmount > 0) {
-              if (placeBoat(gridIndex, 1)) {
+              if (changeGridItem(gridIndex, 1)) {
                 setSize3BoatAmount(size3BoatAmount - 1);
               }
             }
@@ -86,7 +79,7 @@ function BoatsContainer(props: any) {
           }}
           onDragEnd={() => {
             if (size2BoatAmount > 0) {
-              if (placeBoat(gridIndex, 1)) {
+              if (changeGridItem(gridIndex, 1)) {
                 setSize2BoatAmount(size2BoatAmount - 1);
               }
             }
@@ -113,7 +106,7 @@ function BoatsContainer(props: any) {
           }}
           onDragEnd={() => {
             if (size1BoatAmount > 0) {
-              if (placeBoat(gridIndex, 1)) {
+              if (changeGridItem(gridIndex, 1)) {
                 setSize1BoatAmount(size1BoatAmount - 1);
               }
             }

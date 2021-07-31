@@ -1,6 +1,7 @@
 {
   "name": "battleship",
   "version": "0.1.0",
+  "homepage": "https://cynto.github.io/battleship",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
@@ -12,6 +13,7 @@
     "@types/react": "^17.0.14",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
@@ -26,6 +28,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

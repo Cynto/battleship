@@ -9,10 +9,9 @@ const uniqid = require('uniqid');
 function Start() {
   const [size, setSize] = useState(1);
   const [dragging, setDragging] = useState(false);
-  const [rotation, setRotation] = useState('horizontal');
-  
+  const [rotation, setRotation] = useState('vertical');
   const [gridIndex, setGridIndex] = useState(1);
-  const [validPlacement, setValidPlacement] = useState(true)
+  const [validPlacement, setValidPlacement] = useState(true);
   const playerGridArray = useSelector((state: any) => state.playerGridArray);
 
   const dispatch = useDispatch();
@@ -27,15 +26,15 @@ function Start() {
     dispatch(setPlayerGrid(newArray));
   };
 
-  const placeBoat = (index: number, type: number) => {
+  const changeGridItem = (index: number, newItem: number) => {
     let newArray = playerGridArray;
     let newIndex = index;
     let indexArray = [];
-    let horIndexArray = [];
+
     let possiblePlacement = true;
     for (let i = 0; i < size; i += 1) {
       if (rotation === 'horizontal') {
-        horIndexArray.push(index + i);
+        indexArray.push(index + i);
       } else {
         indexArray.push(i + newIndex);
         newIndex += 9;
@@ -43,55 +42,83 @@ function Start() {
     }
     const lastValue = indexArray.slice(-1);
 
-    if (rotation === 'vertical' && lastValue[0] < 100) {
-      
+    if (
+      rotation === 'horizontal' ||
+      (rotation === 'vertical' && lastValue[0] < 100)
+    ) {
       for (let i = 0; i < indexArray.length; i += 1) {
         if (newArray[indexArray[i]] === 1) {
           possiblePlacement = false;
-          setValidPlacement(false)
         }
+        if (indexArray[i] % 10 === 9 && indexArray[i + 1] % 10 === 0) {
+          possiblePlacement = false;
+        }
+
+        if (newArray[indexArray[i + 1]] === 1) {
+          possiblePlacement = false;
+        }
+      }
+
+      const firstTenArray: number[] = [];
+      for (let i = 0; i < 10; i += 1) {
+        firstTenArray.push(i * 10);
+      }
+      const lastTenArray: number[] = [];
+      for (let i = 9; i < 100; i += 10) {
+        lastTenArray.push(i);
       }
       for (let i = 0; i < indexArray.length; i += 1) {
-        if (possiblePlacement) {
-          newArray[indexArray[i]] = type;
-          setValidPlacement(true)
+        if (
+          newArray[indexArray[i] + 10] === 1 ||
+          newArray[indexArray[i] - 10] === 1
+        ) {
+          possiblePlacement = false;
         }
-      }
-    } else if (rotation === 'horizontal') {
-      
 
-      for (let i = 0; i < horIndexArray.length; i += 1) {
-        if (newArray[horIndexArray[i]] === 1) {
+        if (
+          !firstTenArray.includes(indexArray[i]) &&
+          (newArray[indexArray[i] - 1] === 1 ||
+            newArray[indexArray[i] - 11] === 1 ||
+            newArray[indexArray[i] + 9] === 1 ||
+            newArray[indexArray[0] - 11] === 1)
+        ) {
           possiblePlacement = false;
-          setValidPlacement(false)
         }
-        if (horIndexArray[i] % 10 === 9 && horIndexArray[i + 1] % 10 === 0) {
+
+        if (
+          !lastTenArray.includes(indexArray[i]) &&
+          (newArray[indexArray[i] + 1] === 1 ||
+            newArray[indexArray[i] + 11] === 1 ||
+            newArray[indexArray[i] - 9] === 1)
+        ) {
           possiblePlacement = false;
-          setValidPlacement(false)
-        }
-        
-        if(newArray[horIndexArray[(i + 1)]] === 1) {
-          possiblePlacement = false;
-          setValidPlacement(false)
         }
       }
-      const lastHorValue = horIndexArray.slice(-1)
-      if(newArray[lastHorValue[0] + 1] === 1 || newArray[horIndexArray[0] - 1] === 1) {
-        possiblePlacement = false;
-        setValidPlacement(false)
-      }
-      for (let i = 0; i < horIndexArray.length; i += 1) {
+
+      for (let i = 0; i < indexArray.length; i += 1) {
         if (possiblePlacement) {
-          newArray[horIndexArray[i]] = type;
-          setValidPlacement(true)
+          newArray[indexArray[i]] = newItem;
         }
       }
     }
     dispatch(setPlayerGrid(newArray));
-    return possiblePlacement
-  };
 
-  
+    return possiblePlacement;
+  };
+  document.addEventListener('keypress', (e) => {
+    if (e.key === 'r') {
+      if (rotation === 'vertical') {
+        setRotation('horizontal');
+      } else {
+        setRotation('vertical');
+      }
+    }
+  });
+
+  useEffect(() => {
+    console.log(rotation);
+  }, [rotation]);
+
   return (
     <div data-testid="start" className="start">
       <div className="grid-layout-title-container">
@@ -107,7 +134,8 @@ function Start() {
                     onDragEnter={() => {
                       if (dragging) {
                         hoverLeave();
-                        placeBoat(index, 2);
+
+                        changeGridItem(index, 2);
                         setGridIndex(index);
                       }
                     }}
@@ -127,7 +155,14 @@ function Start() {
               }
             })}
           </div>
-          <BoatsContainer validPlacement={validPlacement} hoverLeave={hoverLeave} setSize={setSize} placeBoat={placeBoat} setDragging={setDragging} gridIndex={gridIndex}/>
+          <BoatsContainer
+            validPlacement={validPlacement}
+            hoverLeave={hoverLeave}
+            setSize={setSize}
+            changeGridItem={changeGridItem}
+            setDragging={setDragging}
+            gridIndex={gridIndex}
+          />
         </div>
       </div>
     </div>
