@@ -1,18 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './boatsContainer.css';
 
 function BoatsContainer(props: any) {
-  const { setSize, changeGridItem, setDragging, gridIndex, hoverLeave } = props;
+  const {
+    setSize,
+    changeGridItem,
+    setDragging,
+    gridIndex,
+    hoverLeave,
+    rotation,
+  } = props;
   const [size4BoatAmount, setSize4BoatAmount] = useState(1);
   const [size3BoatAmount, setSize3BoatAmount] = useState(2);
   const [size2BoatAmount, setSize2BoatAmount] = useState(3);
   const [size1BoatAmount, setSize1BoatAmount] = useState(4);
+  const [verticalClass, setVerticalClass] = useState(
+    rotation === 'vertical' ? 'vertical' : '',
+  );
+
+  useEffect(() => {
+    if (rotation === 'vertical') {
+      setVerticalClass('vertical');
+    }else setVerticalClass('')
+  }, [rotation]);
   return (
-    <div className="boats-container">
-      <div className=" boat-amount-container">
+    <div className={`boats-container ${verticalClass}`}>
+      <div className={`boat-amount-container ${verticalClass}`}>
         <span>{size4BoatAmount}x</span>
         <div
-          className="draggable-item"
+          className={`draggable-item ${verticalClass}`}
           draggable="true"
           onDragStart={() => {
             if (size4BoatAmount > 0) {
@@ -38,10 +54,10 @@ function BoatsContainer(props: any) {
         </div>
       </div>
 
-      <div className=" boat-amount-container">
+      <div className={`boat-amount-container ${verticalClass}`}>
         <span>{size3BoatAmount}x</span>
         <div
-          className="draggable-item"
+          className={`draggable-item ${verticalClass}`}
           draggable="true"
           onDragStart={() => {
             if (size3BoatAmount > 0) {
@@ -65,11 +81,11 @@ function BoatsContainer(props: any) {
           <div className="visible-player grid-item"></div>
         </div>
       </div>
-      <div className=" boat-amount-container">
+      <div className={`boat-amount-container ${verticalClass}`}>
         <span>{size2BoatAmount}x</span>
 
         <div
-          className="draggable-item"
+          className={`draggable-item ${verticalClass}`}
           draggable="true"
           onDragStart={() => {
             if (size2BoatAmount > 0) {
@@ -93,10 +109,10 @@ function BoatsContainer(props: any) {
           <div className="visible-player grid-item"></div>
         </div>
       </div>
-      <div className=" boat-amount-container">
+      <div className={`boat-amount-container ${verticalClass}`}>
         <span>{size1BoatAmount}x</span>
         <div
-          className="draggable-item"
+          className={`draggable-item ${verticalClass}`}
           draggable="true"
           onDragStart={() => {
             if (size1BoatAmount > 0) {

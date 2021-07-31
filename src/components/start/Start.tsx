@@ -114,11 +114,6 @@ function Start() {
       }
     }
   });
-
-  useEffect(() => {
-    console.log(rotation);
-  }, [rotation]);
-
   return (
     <div data-testid="start" className="start">
       <div className="grid-layout-title-container">
@@ -162,6 +157,7 @@ function Start() {
             changeGridItem={changeGridItem}
             setDragging={setDragging}
             gridIndex={gridIndex}
+            rotation={rotation}
           />
         </div>
       </div>

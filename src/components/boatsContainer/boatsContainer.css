@@ -1,21 +1,11 @@
-.boats-container {
-  
-  height: 100%;
-  width: 298px;
-  height: 400px;
-  display: flex;
-  
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border-top: 1px solid grey;
-}
+
 .boat-amount-container {
   
   height: 40px;
   
   display: flex;
   align-items: center;
+  
   color: white;
   width: 210px;
 }
@@ -27,4 +17,24 @@
 .draggable-item {
   display: flex;
   
+}
+.vertical {
+  flex-direction: column;
+  align-items: unset;
+  height: auto;
+  width: 50px;
+  flex-wrap: wrap;
+  min-height: 210px;
+}
+.boats-container {
+  
+  
+  width: 298px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid grey;
 }
