@@ -8,10 +8,10 @@ const uniqid = require('uniqid');
 
 function Start() {
   const [size, setSize] = useState(1);
-  const [dragging, setDragging] = useState(false);
+  
   const [rotation, setRotation] = useState('vertical');
   const [gridIndex, setGridIndex] = useState(1);
-  const [validPlacement, setValidPlacement] = useState(true);
+
   const playerGridArray = useSelector((state: any) => state.playerGridArray);
 
   const dispatch = useDispatch();
@@ -118,6 +118,7 @@ function Start() {
     <div data-testid="start" className="start">
       <div className="grid-layout-title-container">
         <h2>Arrange Your Board</h2>
+        <p>Press R to Rotate Ships</p>
         <div className="grid-layout-container">
           <div className="grid-container">
             {playerGridArray.map((item: number, index: number) => {
@@ -125,37 +126,43 @@ function Start() {
                 return (
                   <div
                     key={uniqid()}
+                    data-testid={`grid-item-${index}`}
                     className="not-visible grid-item"
                     onDragEnter={() => {
-                      if (dragging) {
-                        hoverLeave();
-
+                     
+                        
+                        hoverLeave()
                         changeGridItem(index, 2);
                         setGridIndex(index);
-                      }
-                    }}
+                      
+                    }} 
                   ></div>
                 );
               } else if (item === 1) {
                 return (
                   <div
                     key={uniqid()}
+                    data-testid={`grid-item-${index}`}
                     className="visible-player grid-item"
                   ></div>
                 );
               } else if (item === 2) {
                 return (
-                  <div key={uniqid()} className="hover-player grid-item"></div>
+                  <div
+                    key={uniqid()}
+                    data-testid={`grid-item-hover-${index}`}
+                    className="hover-player grid-item"
+                  ></div>
                 );
               }
             })}
           </div>
           <BoatsContainer
-            validPlacement={validPlacement}
+            
             hoverLeave={hoverLeave}
             setSize={setSize}
             changeGridItem={changeGridItem}
-            setDragging={setDragging}
+            
             gridIndex={gridIndex}
             rotation={rotation}
           />

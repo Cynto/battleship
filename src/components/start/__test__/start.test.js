@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Start from '../Start';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../../../store';
+import TestRenderer from 'react-test-renderer';
+const { act } = TestRenderer;
 
-describe('Main Container tests', () => {
+describe('Start tests', () => {
   afterEach(cleanup);
   test('Renders without crashing', () => {
     const div = document.createElement('div');
@@ -21,7 +23,7 @@ describe('Main Container tests', () => {
       div,
     );
   });
-  test('Renders main container correctly', () => {
+  test('Renders start container correctly', () => {
     const { getByTestId } = render(
       <Provider store={store}>
         <Router>
@@ -31,6 +33,7 @@ describe('Main Container tests', () => {
     );
     expect(getByTestId('start')).toHaveClass('start');
   });
+
   test('Matches snapshot', () => {
     const tree = renderer
       .create(
@@ -43,4 +46,30 @@ describe('Main Container tests', () => {
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
+});
+
+describe('grid-tests', () => {
+  afterEach(cleanup);
+  test('Grid item changes on dragEnter', () => {
+    const { getByTestId } = render();
+    act(() => {
+      render(
+        <Provider store={store}>
+          <Router>
+            <Start />{' '}
+          </Router>
+        </Provider>,
+      );
+
+      const gridItem = getByTestId('grid-item-5');
+      fireEvent.dragEnter(gridItem);
+    });
+
+    const hoverItem = getByTestId('grid-item-hover-5');
+    
+    expect(hoverItem).toHaveClass('hover-player grid-item');
+    
+    
+  });
+  
 });

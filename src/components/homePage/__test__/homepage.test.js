@@ -6,7 +6,7 @@ import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
 
-describe('Start page tests', () => {
+describe('Homepage tests', () => {
   afterEach(cleanup);
   test('Renders without crashing', () => {
     const div = document.createElement('div');

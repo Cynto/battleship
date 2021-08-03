@@ -1,4 +1,6 @@
-
+.total-right-container {
+  
+}
 .boat-amount-container {
   
   height: 40px;
@@ -28,7 +30,7 @@
 }
 .boats-container {
   
-  
+  height: 80%;
   width: 298px;
   
   display: flex;
@@ -37,4 +39,35 @@
   align-items: center;
   flex-wrap: wrap;
   border-top: 1px solid grey;
+}
+.start-button-container {
+  display: flex;
+  justify-content: center;
+}
+.start-button-container button {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.start-button-container button::before {
+  border: 2px solid white;
+  box-sizing: border-box;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: transform 0.2s;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.start-button-container button:hover::before {
+  transform: translate3d(3px,3px,0);
 }
