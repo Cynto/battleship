@@ -630,7 +630,8 @@ Array [
             <button
               onClick={[Function]}
             >
-              Reset 
+              Reset
+               
             </button>
           </div>
         </div>

@@ -7,4 +7,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+}
+.title-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  background: #1f1f1f;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.grid-container {
+  border: 1px solid grey;
 }

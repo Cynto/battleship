@@ -140,7 +140,7 @@ function Start() {
                 );
               } else if (item === 1) {
                 return (
-                  <div
+                  <div 
                     key={uniqid()}
                     data-testid={`grid-item-${index}`}
                     className="visible-player grid-item"

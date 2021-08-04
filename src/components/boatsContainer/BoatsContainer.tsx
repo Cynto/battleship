@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './boatsContainer.css';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { setGridComplete, setPlayerGrid} from '../../actions';
+import { setGridComplete, setPlayerGrid } from '../../actions';
 
 function BoatsContainer(props: any) {
   const playerGridComplete = useSelector(
@@ -154,10 +154,14 @@ function BoatsContainer(props: any) {
         </div>
       </div>
       <div className="start-button-container">
-        <button onClick={() => {
-          resetBoatsAmount();
-          dispatch(setPlayerGrid(freshArray))
-        }}>Reset </button>
+        <button
+          onClick={() => {
+            resetBoatsAmount();
+            dispatch(setPlayerGrid(freshArray));
+          }}
+        >
+          Reset{' '}
+        </button>
         {!size1BoatAmount &&
         !size2BoatAmount &&
         !size3BoatAmount &&
