@@ -2,12 +2,19 @@ import MainContainer from './components/mainContainer/MainContainer';
 import HomePage from './components/homePage/HomePage';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setAIGrid } from './actions';
+import PlaceAIBoats from './api/AIBoatPlacement';
 import Start from './components/start/Start';
 
 
 function App() {
+  const AIArray: number[] = PlaceAIBoats()
+  const dispatch = useDispatch();
+  dispatch(setAIGrid(AIArray))
+  
   return (
     <Router>
       <div className="App">

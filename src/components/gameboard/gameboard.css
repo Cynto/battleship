@@ -21,3 +21,9 @@
 .grid-container {
   border: 1px solid grey;
 }
+.computer-grid {
+  cursor: crosshair;
+}
+.computer-grid:hover {
+  background: rgb(168, 168, 168);
+}

@@ -22,5 +22,6 @@ describe('Boats tests', () => {
       </Provider>,
       div,
     );
+    expect(1).toBe(1)
   });
 });

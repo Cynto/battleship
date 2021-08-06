@@ -9,31 +9,5 @@ import { HashRouter as Router } from 'react-router-dom';
 
 describe('Start page tests', () => {
   afterEach(cleanup);
-  test('Renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(
-      <Router>
-        <Gameboard />
-      </Router>,
-      div,
-    );
-  });
-  test('Renders main container correctly', () => {
-    const { getByTestId } = render(
-      <Router>
-        <Gameboard />
-      </Router>,
-    );
-    expect(getByTestId('gameboard')).toHaveClass('gameboard-container');
-  });
-  test('Matches snapshot', () => {
-    const tree = renderer
-      .create(
-        <Router>
-          <Gameboard />
-        </Router>,
-      )
-      .toJSON();
-    expect(tree).toMatchSnapshot();
-  });
+  
 });

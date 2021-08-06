@@ -1,15 +1,846 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Main Container tests Matches snapshot 1`] = `
-<div
-  className="main-container"
-  data-testid="main-container"
->
+Array [
   <div
-    className="gameboard-container"
-    data-testid="gameboard"
+    className="main-container"
+    data-testid="main-container"
   >
-    <h2 />
-  </div>
-</div>
+    <div
+      className="gameboard-container"
+      data-testid="gameboard"
+    >
+      <div
+        className="title-container"
+      >
+         
+        <h2>
+          Player Board
+        </h2>
+      </div>
+      <div
+        className="grid-container"
+      >
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-0"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-1"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-2"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-3"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-4"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-5"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-6"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-7"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-8"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-9"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-10"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-11"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-12"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-13"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-14"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-15"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-16"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-17"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-18"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-19"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-20"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-21"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-22"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-23"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-24"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-25"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-26"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-27"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-28"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-29"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-30"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-31"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-32"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-33"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-34"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-35"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-36"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-37"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-38"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-39"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-40"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-41"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-42"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-43"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-44"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-45"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-46"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-47"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-48"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-49"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-50"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-51"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-52"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-53"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-54"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-55"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-56"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-57"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-58"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-59"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-60"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-61"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-62"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-63"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-64"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-65"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-66"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-67"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-68"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-69"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-70"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-71"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-72"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-73"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-74"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-75"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-76"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-77"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-78"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-79"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-80"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-81"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-82"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-83"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-84"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-85"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-86"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-87"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-88"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-89"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-90"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-91"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-92"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-93"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-94"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-95"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-96"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-97"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-98"
+        />
+        <div
+          className="not-visible grid-item"
+          data-testid="grid-item-99"
+        />
+      </div>
+    </div>
+    <div
+      className="gameboard-container"
+      data-testid="gameboard"
+    >
+      <div
+        className="title-container"
+      >
+         
+        <h2>
+          AI Board
+        </h2>
+      </div>
+      <div
+        className="grid-container"
+      >
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-0"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-1"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-2"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-3"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-4"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-5"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-6"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-7"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-8"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-9"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-10"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-11"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-12"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-13"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-14"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-15"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-16"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-17"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-18"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-19"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-20"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-21"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-22"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-23"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-24"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-25"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-26"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-27"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-28"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-29"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-30"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-31"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-32"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-33"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-34"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-35"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-36"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-37"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-38"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-39"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-40"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-41"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-42"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-43"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-44"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-45"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-46"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-47"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-48"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-49"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-50"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-51"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-52"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-53"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-54"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-55"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-56"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-57"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-58"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-59"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-60"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-61"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-62"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-63"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-64"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-65"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-66"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-67"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-68"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-69"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-70"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-71"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-72"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-73"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-74"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-75"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-76"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-77"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-78"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-79"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-80"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-81"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-82"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-83"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-84"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-85"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-86"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-87"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-88"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-89"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-90"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-91"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-92"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-93"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-94"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-95"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-96"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-97"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-98"
+        />
+        <div
+          className="not-visible grid-item computer-grid"
+          data-testid="grid-item-99"
+        />
+      </div>
+    </div>
+  </div>,
+  " ",
+]
 `;
