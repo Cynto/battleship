@@ -16,3 +16,9 @@ export const setGridComplete = (bool: boolean) => {
     payload: bool,
   }
 }
+export const SetAIBoatArray = (newArray: any) => {
+  return {
+    type: 'SET_AI_BOAT_ARRAY',
+    payload: newArray,
+  }
+}

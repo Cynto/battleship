@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
 import store from '../store';
 import AIGridReducer from '../reducers/AIGrid';
-import { setAIGrid } from '../actions';
+import { setAIGrid, SetAIBoatArray } from '../actions';
 
 const PlaceAIBoats = () => {
   const AIGridArray: number[] = [];
+  const AIBoatArray: any[] = [];
   for (let i = 0; i < 100; i++) {
     AIGridArray.push(0);
   }
@@ -46,7 +47,7 @@ const PlaceAIBoats = () => {
         }
       }
     }
-    if (lastValue[0] > 100) {
+    if (lastValue[0] > 99) {
       validPlacement = false;
     }
     const firstTenArray: number[] = [];
@@ -90,7 +91,6 @@ const PlaceAIBoats = () => {
         AIGridArray[indexArray[i]] = 3;
       }
     }
-    console.log(`${validPlacement} size: ${size}`);
 
     if (timesRun >= 20) {
       return 'Exceeded 10';
@@ -99,6 +99,17 @@ const PlaceAIBoats = () => {
       placeBoat(size);
     } else {
       timesRun = 0;
+      const boatItem = {
+        locationArray: indexArray,
+        rotation,
+        isSunk: indexArray.every((index) => AIGridArray[index] === 5)
+          ? true
+          : false,
+        isHit: indexArray.some((index) => AIGridArray[index] === 5)
+          ? true
+          : false,
+      };
+      AIBoatArray.push(boatItem);
     }
   };
 
@@ -115,13 +126,9 @@ const PlaceAIBoats = () => {
   placeBoat(1);
   placeBoat(1);
   placeBoat(1);
-  let boats = 0;
-  for (let i = 0; i < AIGridArray.length; i += 1) {
-    if (AIGridArray[i] === 3) {
-      boats += 1;
-    }
-  }
-  console.log(boats);
+
+  store.dispatch(SetAIBoatArray(AIBoatArray));
+  
   return AIGridArray;
 };
 export default PlaceAIBoats;

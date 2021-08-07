@@ -23,7 +23,19 @@
 }
 .computer-grid {
   cursor: crosshair;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .computer-grid:hover {
   background: rgb(168, 168, 168);
+}
+.computer-grid i {
+  color: rgb(148, 0, 0);
+}
+.visible-player i {
+  color: black;
+}
+.visible-player:hover {
+  background: white;
 }

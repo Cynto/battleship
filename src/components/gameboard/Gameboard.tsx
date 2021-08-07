@@ -1,6 +1,7 @@
 import React from 'react';
 import './gameboard.css';
 import { useSelector, useDispatch } from 'react-redux';
+import playerTurn from '../../api/playerTurn';
 const uniqid = require('uniqid');
 
 function Gameboard(props: any) {
@@ -22,6 +23,13 @@ function Gameboard(props: any) {
                   playerGrid
                     ? 'not-visible grid-item'
                     : 'not-visible grid-item computer-grid'
+                }
+                onClick={
+                  playerGrid
+                    ? undefined
+                    : () => {
+                        playerTurn(index);
+                      }
                 }
               ></div>
             );
@@ -47,7 +55,34 @@ function Gameboard(props: any) {
                 key={uniqid()}
                 data-testid={`grid-item-hover-${index}`}
                 className="hover-player not-visible grid-item computer-grid"
+                onClick={
+                  playerGrid
+                    ? undefined
+                    : () => {
+                        playerTurn(index);
+                      }
+                }
               ></div>
+            );
+          } else if (item === 4) {
+            return (
+              <div
+                key={uniqid()}
+                data-testid={`grid-item-hover-${index}`}
+                className=" not-visible grid-item computer-grid"
+              >
+                <i className="fas fa-bomb"></i>
+              </div>
+            );
+          } else if (item === 5) {
+            return (
+              <div
+                key={uniqid()}
+                data-testid={`grid-item-hover-${index}`}
+                className=" visible-player grid-item computer-grid"
+              >
+                <i className="fas fa-bomb"></i>
+              </div>
             );
           }
         })}
