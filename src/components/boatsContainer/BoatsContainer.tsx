@@ -3,6 +3,7 @@ import './boatsContainer.css';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { setGridComplete, setPlayerGrid } from '../../actions';
+import placeBoats from '../../api/BoatPlacement'
 
 function BoatsContainer(props: any) {
   const playerGridComplete = useSelector(
@@ -158,9 +159,16 @@ function BoatsContainer(props: any) {
           onClick={() => {
             resetBoatsAmount();
             dispatch(setPlayerGrid(freshArray));
+            dispatch(setGridComplete(false))
           }}
         >
           Reset{' '}
+        </button>
+        <button onClick={() => {
+          dispatch(setPlayerGrid(placeBoats('player')))
+          dispatch(setGridComplete(true));
+        }}>
+          Randomize
         </button>
         {!size1BoatAmount &&
         !size2BoatAmount &&

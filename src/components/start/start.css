@@ -45,7 +45,9 @@
   height: 38px;
   width: 38px;
   border: 0.2px solid grey;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .not-visible {
   background: rgb(39, 39, 39);

@@ -30,11 +30,16 @@
 .computer-grid:hover {
   background: rgb(168, 168, 168);
 }
-.computer-grid i {
+.hit-empty {
   color: rgb(148, 0, 0);
+  background: rgb(39, 39, 39);
 }
-.visible-player i {
+.computer-grid i {
+  
+}
+.hit-boat {
   color: black;
+  background: white;
 }
 .visible-player:hover {
   background: white;

@@ -1,4 +1,4 @@
-import PlaceAIBoats from '../api/AIBoatPlacement';
+import PlaceAIBoats from '../api/BoatPlacement';
 
 describe('AI Boat Placement Tests', () => {
   test('20 boat blocks are placed', () => {

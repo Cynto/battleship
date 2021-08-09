@@ -1,7 +1,7 @@
-import playerTurn from "../api/playerTurn";
+import turn from "../api/turn";
 
 describe('Player turn tests', () => {
   test('Player turn function returns index', () => {
-    expect(playerTurn(5)).toBe(5)
+    expect(turn(5)).toBe(5)
   })
 })

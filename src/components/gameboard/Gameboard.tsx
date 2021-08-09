@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './gameboard.css';
 import { useSelector, useDispatch } from 'react-redux';
-import playerTurn from '../../api/playerTurn';
+import turn from '../../api/turn';
 const uniqid = require('uniqid');
 
 function Gameboard(props: any) {
   const { gridArray, playerGrid } = props;
+  const playerTurn = useSelector((state: any) => state.playerTurn)
+
+  useEffect(() => {
+   console.log(playerTurn)
+  }, [playerTurn])
   return (
     <div data-testid="gameboard" className="gameboard-container">
       <div className="title-container">
@@ -28,7 +33,10 @@ function Gameboard(props: any) {
                   playerGrid
                     ? undefined
                     : () => {
-                        playerTurn(index);
+                      if(playerTurn) {
+                        turn(index, 'player');
+                      }
+                        
                       }
                 }
               ></div>
@@ -59,7 +67,9 @@ function Gameboard(props: any) {
                   playerGrid
                     ? undefined
                     : () => {
-                        playerTurn(index);
+                      if(playerTurn) {
+                        turn(index, 'player');
+                      }
                       }
                 }
               ></div>
@@ -69,7 +79,7 @@ function Gameboard(props: any) {
               <div
                 key={uniqid()}
                 data-testid={`grid-item-hover-${index}`}
-                className=" not-visible grid-item computer-grid"
+                className=" hit-empty grid-item computer-grid"
               >
                 <i className="fas fa-bomb"></i>
               </div>
@@ -80,6 +90,26 @@ function Gameboard(props: any) {
                 key={uniqid()}
                 data-testid={`grid-item-hover-${index}`}
                 className=" visible-player grid-item computer-grid"
+              >
+                <i className="fas fa-bomb"></i>
+              </div>
+            );
+          } else if (item === 6) {
+            return (
+              <div
+                key={uniqid()}
+                data-testid={`grid-item-hover-${index}`}
+                className="hit-empty grid-item"
+              >
+                <i className="fas fa-bomb"></i>
+              </div>
+            );
+          } else if (item === 7) {
+            return (
+              <div
+                key={uniqid()}
+                data-testid={`grid-item-hover-${index}`}
+                className="hit-boat grid-item"
               >
                 <i className="fas fa-bomb"></i>
               </div>

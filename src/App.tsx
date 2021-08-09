@@ -6,12 +6,12 @@ import { useState, useEffect } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { setAIGrid } from './actions';
-import PlaceAIBoats from './api/AIBoatPlacement';
+import placeBoats from './api/BoatPlacement';
 import Start from './components/start/Start';
 
 
 function App() {
-  const AIArray: number[] = PlaceAIBoats()
+  const AIArray: number[] = placeBoats('AI')
   const dispatch = useDispatch();
   dispatch(setAIGrid(AIArray))
   

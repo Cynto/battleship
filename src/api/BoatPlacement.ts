@@ -1,17 +1,23 @@
 import { useSelector, useDispatch } from 'react-redux';
 import store from '../store';
 import AIGridReducer from '../reducers/AIGrid';
-import { setAIGrid, SetAIBoatArray } from '../actions';
+import { setAIGrid, SetAIBoatArray, setPlayerBoatArray } from '../actions';
 
-const PlaceAIBoats = () => {
-  const AIGridArray: number[] = [];
-  const AIBoatArray: any[] = [];
+const placeBoats = (playerOrAI: string) => {
+  const gridArray: number[] = [];
+  const boatArray: any[] = [];
   for (let i = 0; i < 100; i++) {
-    AIGridArray.push(0);
+    gridArray.push(0);
   }
   const getRandomIndex = () => {
     return Math.floor(Math.random() * 99);
   };
+  let placeItem = 3;
+  if(playerOrAI === 'player') {
+    placeItem = 1;
+  }else {
+    placeItem = 3;
+  }
   let timesRun = 0;
   const placeBoat = (size: number) => {
     timesRun += 1;
@@ -35,14 +41,14 @@ const PlaceAIBoats = () => {
       (rotation === 'vertical' && lastValue[0] < 100)
     ) {
       for (let i = 0; i < indexArray.length; i += 1) {
-        if (AIGridArray[indexArray[i]] === 3) {
+        if (gridArray[indexArray[i]] === placeItem) {
           validPlacement = false;
         }
         if (indexArray[i] % 10 === 9 && indexArray[i + 1] % 10 === 0) {
           validPlacement = false;
         }
 
-        if (AIGridArray[indexArray[i + 1]] === 3) {
+        if (gridArray[indexArray[i + 1]] === placeItem) {
           validPlacement = false;
         }
       }
@@ -60,27 +66,27 @@ const PlaceAIBoats = () => {
     }
     for (let i = 0; i < indexArray.length; i += 1) {
       if (
-        AIGridArray[indexArray[i] + 10] === 3 ||
-        AIGridArray[indexArray[i] - 10] === 3
+        gridArray[indexArray[i] + 10] === placeItem ||
+        gridArray[indexArray[i] - 10] === placeItem
       ) {
         validPlacement = false;
       }
 
       if (
         !firstTenArray.includes(indexArray[i]) &&
-        (AIGridArray[indexArray[i] - 1] === 3 ||
-          AIGridArray[indexArray[i] - 11] === 3 ||
-          AIGridArray[indexArray[i] + 9] === 3 ||
-          AIGridArray[indexArray[0] - 11] === 3)
+        (gridArray[indexArray[i] - 1] === placeItem ||
+          gridArray[indexArray[i] - 11] === placeItem ||
+          gridArray[indexArray[i] + 9] === placeItem ||
+          gridArray[indexArray[0] - 11] === placeItem)
       ) {
         validPlacement = false;
       }
 
       if (
         !lastTenArray.includes(indexArray[i]) &&
-        (AIGridArray[indexArray[i] + 1] === 3 ||
-          AIGridArray[indexArray[i] + 11] === 3 ||
-          AIGridArray[indexArray[i] - 9] === 3)
+        (gridArray[indexArray[i] + 1] === placeItem ||
+          gridArray[indexArray[i] + 11] === placeItem ||
+          gridArray[indexArray[i] - 9] === placeItem)
       ) {
         validPlacement = false;
       }
@@ -88,7 +94,7 @@ const PlaceAIBoats = () => {
 
     for (let i = 0; i < indexArray.length; i += 1) {
       if (validPlacement) {
-        AIGridArray[indexArray[i]] = 3;
+        gridArray[indexArray[i]] = placeItem;
       }
     }
 
@@ -102,14 +108,10 @@ const PlaceAIBoats = () => {
       const boatItem = {
         locationArray: indexArray,
         rotation,
-        isSunk: indexArray.every((index) => AIGridArray[index] === 5)
-          ? true
-          : false,
-        isHit: indexArray.some((index) => AIGridArray[index] === 5)
-          ? true
-          : false,
+        isSunk: false,
+        isHit: false
       };
-      AIBoatArray.push(boatItem);
+      boatArray.push(boatItem);
     }
   };
 
@@ -126,9 +128,13 @@ const PlaceAIBoats = () => {
   placeBoat(1);
   placeBoat(1);
   placeBoat(1);
-
-  store.dispatch(SetAIBoatArray(AIBoatArray));
+  if(playerOrAI === 'player') {
+    store.dispatch(setPlayerBoatArray(boatArray))
+  }else{
+    store.dispatch(SetAIBoatArray(boatArray));
   
-  return AIGridArray;
+  }
+  
+  return gridArray;
 };
-export default PlaceAIBoats;
+export default placeBoats;

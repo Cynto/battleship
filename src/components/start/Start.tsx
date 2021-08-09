@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './start.css';
 import { useSelector, useDispatch } from 'react-redux';
-import { setPlayerGrid } from '../../actions';
+import { setPlayerGrid, addPlayerBoatArray } from '../../actions';
 import BoatsContainer from '../boatsContainer/BoatsContainer';
 
 const uniqid = require('uniqid');
 
 function Start() {
   const [size, setSize] = useState(1);
-  
+
   const [rotation, setRotation] = useState('vertical');
   const [gridIndex, setGridIndex] = useState(1);
 
@@ -95,9 +95,18 @@ function Start() {
         }
       }
 
-      for (let i = 0; i < indexArray.length; i += 1) {
-        if (possiblePlacement) {
+      if (possiblePlacement) {
+        for (let i = 0; i < indexArray.length; i += 1) {
           newArray[indexArray[i]] = newItem;
+        }
+        if (newItem === 1) {
+          const boatInfo = {
+            locationArray: indexArray,
+            rotation,
+            isSunk: false,
+            isHit: false,
+          };
+          dispatch(addPlayerBoatArray(boatInfo));
         }
       }
     }
@@ -129,18 +138,15 @@ function Start() {
                     data-testid={`grid-item-${index}`}
                     className="not-visible grid-item"
                     onDragEnter={() => {
-                     
-                        
-                        hoverLeave()
-                        changeGridItem(index, 2);
-                        setGridIndex(index);
-                      
-                    }} 
+                      hoverLeave();
+                      changeGridItem(index, 2);
+                      setGridIndex(index);
+                    }}
                   ></div>
                 );
               } else if (item === 1) {
                 return (
-                  <div 
+                  <div
                     key={uniqid()}
                     data-testid={`grid-item-${index}`}
                     className="visible-player grid-item"
@@ -158,11 +164,9 @@ function Start() {
             })}
           </div>
           <BoatsContainer
-            
             hoverLeave={hoverLeave}
             setSize={setSize}
             changeGridItem={changeGridItem}
-            
             gridIndex={gridIndex}
             rotation={rotation}
           />
