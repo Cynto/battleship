@@ -8,9 +8,7 @@ function Gameboard(props: any) {
   const { gridArray, playerGrid } = props;
   const playerTurn = useSelector((state: any) => state.playerTurn)
 
-  useEffect(() => {
-   console.log(playerTurn)
-  }, [playerTurn])
+  
   return (
     <div data-testid="gameboard" className="gameboard-container">
       <div className="title-container">

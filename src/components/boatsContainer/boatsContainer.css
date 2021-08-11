@@ -42,7 +42,8 @@
 }
 .start-button-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  
 }
 .start-button-container button {
   cursor: pointer;
@@ -50,8 +51,9 @@
   border: none;
   padding: 7px;
   font-size: 20px;
-  margin-right: 10px;
+  
 }
+
 
 .start-button-container button::before {
   border: 2px solid white;
@@ -71,4 +73,11 @@
 }
 .start-button-container button:hover::before {
   transform: translate3d(3px,3px,0);
+}
+@media only screen and (max-width: 600px) { 
+  
+  .boats-container {
+    border: none;
+  }
+  
 }

@@ -7,7 +7,11 @@ const AITurn: any = () => {
     return Math.floor(Math.random() * 100);
   };
 
+  const AIGrid = store.getState().AIGrid;
+
   let indexToHit = randomIndex();
+  let playerBoatsHit = 0;
+  let AIBoatsHit = 0;
   const playerGrid = store.getState().playerGridArray;
   for (let i = 0; i < playerGrid.length; i += 1) {
     if (playerGrid[i] === 7) {
@@ -109,23 +113,30 @@ const AITurn: any = () => {
         indexToHit = i - 30;
         break;
       }
+      playerBoatsHit += 1;
+      
+    }
+    if(AIGrid[i] === 5) {
+      AIBoatsHit += 1;
     }
   }
-  console.log(indexToHit);
-  if (
-    (playerGrid[indexToHit] === 6 || playerGrid[indexToHit] === 7) &&
-    indexToHit >= 0 &&
-    indexToHit <= 99
-  ) {
-    store.dispatch(setPlayerTurn(false));
-    return AITurn();
-  }
-  if (turn(indexToHit, 'AI') === false) {
-    console.log('hi');
-    store.dispatch(setPlayerTurn(true));
-  } else {
-    setTimeout(AITurn, 1000);
-    store.dispatch(setPlayerTurn(false));
+  console.log(playerBoatsHit)
+  if (playerBoatsHit !== 20 && AIBoatsHit !== 20) {
+    console.log(indexToHit);
+    if (
+      (playerGrid[indexToHit] === 6 || playerGrid[indexToHit] === 7) &&
+      indexToHit >= 0 &&
+      indexToHit <= 99
+    ) {
+      store.dispatch(setPlayerTurn(false));
+      return AITurn();
+    }
+    if (turn(indexToHit, 'AI') === false) {
+      store.dispatch(setPlayerTurn(true));
+    } else {
+      setTimeout(AITurn, 1000);
+      store.dispatch(setPlayerTurn(false));
+    }
   }
 };
 export default AITurn;

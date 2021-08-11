@@ -424,6 +424,13 @@ Array [
       </div>
     </div>
     <div
+      className="turn"
+    >
+      <h1>
+        Your Turn!
+      </h1>
+    </div>
+    <div
       className="gameboard-container"
       data-testid="gameboard"
     >

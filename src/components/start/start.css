@@ -58,3 +58,34 @@
 .hover-player {
   background: #6e6e6e;
 }
+
+@media only screen and (max-width: 600px) { 
+  .grid-layout-title-container {
+    width: 300px;
+    height: 650px;
+  }
+  .grid-layout-title-container p {
+    display: none;
+  }
+  .grid-item {
+    width: 28px;
+    height: 28px;
+  }
+  .grid-container {
+    width: 300px;
+    height: 300px;
+    border: none;
+  }
+  .boats-container {
+    
+  }
+  .grid-layout-container {
+    flex-direction: column;
+  }
+  .boat-amount-container:nth-child(1) {
+    margin-top: 30px;
+  }
+  .boat-amount-container:nth-child(4) {
+    margin-bottom: 30px;
+  }
+}

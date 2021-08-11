@@ -1,0 +1,41 @@
+.end-container {
+  width: 500px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  
+  background: #1f1f1f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.end-container button {
+  cursor: pointer;
+  position: relative;
+  border: none;
+  padding: 7px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+
+.end-container button::before {
+  border: 2px solid white;
+  box-sizing: border-box;
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: transform 0.2s;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.end-container button:hover::before {
+  transform: translate3d(3px,3px,0);
+}

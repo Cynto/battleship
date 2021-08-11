@@ -9,7 +9,7 @@ const uniqid = require('uniqid');
 function Start() {
   const [size, setSize] = useState(1);
 
-  const [rotation, setRotation] = useState('vertical');
+  const [rotation, setRotation] = useState('horizontal');
   const [gridIndex, setGridIndex] = useState(1);
 
   const playerGridArray = useSelector((state: any) => state.playerGridArray);

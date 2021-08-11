@@ -526,17 +526,17 @@ Array [
           className="total-right-container"
         >
           <div
-            className="boats-container vertical"
+            className="boats-container "
           >
             <div
-              className="boat-amount-container vertical"
+              className="boat-amount-container "
             >
               <span>
                 1
                 x
               </span>
               <div
-                className="draggable-item vertical"
+                className="draggable-item "
                 data-testid="draggable-item"
                 draggable="true"
                 onClick={[Function]}
@@ -558,14 +558,14 @@ Array [
               </div>
             </div>
             <div
-              className="boat-amount-container vertical"
+              className="boat-amount-container "
             >
               <span>
                 2
                 x
               </span>
               <div
-                className="draggable-item vertical"
+                className="draggable-item "
                 draggable="true"
                 onClick={[Function]}
                 onDragEnd={[Function]}
@@ -583,14 +583,14 @@ Array [
               </div>
             </div>
             <div
-              className="boat-amount-container vertical"
+              className="boat-amount-container "
             >
               <span>
                 3
                 x
               </span>
               <div
-                className="draggable-item vertical"
+                className="draggable-item "
                 draggable="true"
                 onClick={[Function]}
                 onDragEnd={[Function]}
@@ -605,14 +605,14 @@ Array [
               </div>
             </div>
             <div
-              className="boat-amount-container vertical"
+              className="boat-amount-container "
             >
               <span>
                 4
                 x
               </span>
               <div
-                className="draggable-item vertical"
+                className="draggable-item "
                 draggable="true"
                 onClick={[Function]}
                 onDragEnd={[Function]}
@@ -632,6 +632,11 @@ Array [
             >
               Reset
                
+            </button>
+            <button
+              onClick={[Function]}
+            >
+              Randomize
             </button>
           </div>
         </div>
