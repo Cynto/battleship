@@ -59,8 +59,8 @@ function Gameboard(props: any) {
             return (
               <div
                 key={uniqid()}
-                data-testid={`grid-item-hover-${index}`}
-                className="hover-player not-visible grid-item computer-grid"
+                
+                className=" not-visible grid-item computer-grid"
                 onClick={
                   playerGrid
                     ? undefined
@@ -76,7 +76,7 @@ function Gameboard(props: any) {
             return (
               <div
                 key={uniqid()}
-                data-testid={`grid-item-hover-${index}`}
+                
                 className=" hit-empty grid-item computer-grid"
               >
                 <i className="fas fa-bomb"></i>
@@ -86,7 +86,7 @@ function Gameboard(props: any) {
             return (
               <div
                 key={uniqid()}
-                data-testid={`grid-item-hover-${index}`}
+                
                 className=" visible-player grid-item computer-grid"
               >
                 <i className="fas fa-bomb"></i>
@@ -96,7 +96,7 @@ function Gameboard(props: any) {
             return (
               <div
                 key={uniqid()}
-                data-testid={`grid-item-hover-${index}`}
+                
                 className="hit-empty grid-item"
               >
                 <i className="fas fa-bomb"></i>
@@ -106,7 +106,7 @@ function Gameboard(props: any) {
             return (
               <div
                 key={uniqid()}
-                data-testid={`grid-item-hover-${index}`}
+                
                 className="hit-boat grid-item"
               >
                 <i className="fas fa-bomb"></i>

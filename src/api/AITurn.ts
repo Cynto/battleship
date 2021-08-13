@@ -120,9 +120,9 @@ const AITurn: any = () => {
       AIBoatsHit += 1;
     }
   }
-  console.log(playerBoatsHit)
+  
   if (playerBoatsHit !== 20 && AIBoatsHit !== 20) {
-    console.log(indexToHit);
+    
     if (
       (playerGrid[indexToHit] === 6 || playerGrid[indexToHit] === 7) &&
       indexToHit >= 0 &&
